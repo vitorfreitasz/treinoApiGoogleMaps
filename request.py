@@ -121,6 +121,7 @@ api_key = os.getenv('API_KEY')
 
 # Testes ===================================================================================================
 
+# Teste 1 ----
 address = 'Rua Benjamin Constant, 184, Rio Grande'
 
 lati, longi = get_lati_longi(api_key, address)
@@ -129,28 +130,12 @@ print(f"Latitude: {lati}")
 
 print(f"Longitude: {longi}")
 
+
+# Teste 2 ----
+
 start = "Palace Lucerna, Nové Město"
 
 end = "Project FOX, Praha 3-Žižkov"
-
-enderecos = [
-    "1600 Amphitheatre Parkway, Mountain View, CA",
-    "1 Infinite Loop, Cupertino, CA",
-    "350 5th Ave, New York, NY"
-]
-
-print('\n\n-----------------\n\n')
-"""
-"""
-matriz_distancias, matriz_tempos = set_array(enderecos, api_key)
-print("Matriz de Distâncias:")
-for linha in matriz_distancias:
-    print(linha)
-
-print("\nMatriz de Tempos:")
-for linha in matriz_tempos:
-    print(linha)
-print('\n\n-----------------\n\n')
 
 distance, duration = get_dist_dur(api_key, start, end)
 
@@ -159,3 +144,25 @@ if distance and duration:
     print(f"Distância: {distance}")
 
     print(f"Duração: {duration}")
+    
+
+# Teste 3 ----
+    
+enderecos = [
+    "1600 Amphitheatre Parkway, Mountain View, CA",
+    "1 Infinite Loop, Cupertino, CA",
+    "350 5th Ave, New York, NY"
+]
+
+print('\n\n-----------------\n\n')
+
+matriz_distancias, matriz_tempos = set_array(enderecos, api_key)
+print("Matriz de Distâncias:")
+for linha in matriz_distancias:
+    print(linha)
+
+print("\nMatriz de Tempos:")
+for linha in matriz_tempos:
+    print(linha)
+    
+print('\n\n-----------------\n\n')
