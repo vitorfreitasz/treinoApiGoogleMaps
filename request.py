@@ -147,14 +147,22 @@ if distance and duration:
     
 
 # Teste 3 ----
-    
+
 enderecos = [
     "1600 Amphitheatre Parkway, Mountain View, CA",
     "1 Infinite Loop, Cupertino, CA",
     "350 5th Ave, New York, NY"
 ]
+print('-----------------------------------------------------')
+for endereco in enderecos:
+    lat, long = get_lati_longi(api_key, endereco)
+    print(f'\nEndereço: {endereco}\nLatitude: {lat}\nLongitude: {long}\n\n---------------------------------------------------')
 
-print('\n\n-----------------\n\n')
+
+# Teste 4 ----
+    
+
+print('\n\n-----------------------------------------------------\n\n')
 
 matriz_distancias, matriz_tempos = set_array(enderecos, api_key)
 print("Matriz de Distâncias:")
@@ -165,4 +173,4 @@ print("\nMatriz de Tempos:")
 for linha in matriz_tempos:
     print(linha)
     
-print('\n\n-----------------\n\n')
+print('\n\n-----------------------------------------------------\n\n')
