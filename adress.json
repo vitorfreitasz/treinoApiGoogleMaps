@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "address_components": [
+        { "long_name": "184", "short_name": "184", "types": ["street_number"] },
+        {
+          "long_name": "Rua Benjamin Constant",
+          "short_name": "R. Benjamin Constant",
+          "types": ["route"]
+        },
+        {
+          "long_name": "Centro",
+          "short_name": "Centro",
+          "types": ["political", "sublocality", "sublocality_level_1"]
+        },
+        {
+          "long_name": "Rio Grande",
+          "short_name": "Rio Grande",
+          "types": ["administrative_area_level_2", "political"]
+        },
+        {
+          "long_name": "Rio Grande do Sul",
+          "short_name": "RS",
+          "types": ["administrative_area_level_1", "political"]
+        },
+        {
+          "long_name": "Brazil",
+          "short_name": "BR",
+          "types": ["country", "political"]
+        },
+        {
+          "long_name": "96200-090",
+          "short_name": "96200-090",
+          "types": ["postal_code"]
+        }
+      ],
+      "entrances": [],
+      "formatted_address": "R. Benjamin Constant, 184 - Centro, Rio Grande - RS, 96200-090, Brazil",
+      "geometry": {
+        "location": { "lat": -32.033252, "lng": -52.0935341 },
+        "location_type": "RANGE_INTERPOLATED",
+        "viewport": {
+          "northeast": { "lat": -32.03191186970849, "lng": -52.0921375197085 },
+          "southwest": { "lat": -32.03460983029149, "lng": -52.0948354802915 }
+        }
+      },
+      "place_id": "EkZSLiBCZW5qYW1pbiBDb25zdGFudCwgMTg0IC0gQ2VudHJvLCBSaW8gR3JhbmRlIC0gUlMsIDk2MjAwLTA5MCwgQnJhemlsIjESLwoUChIJXxP0TRCcEZURPdLBW24lzGoQuAEqFAoSCYHohusRnBGVEffG9ZkK8a4D",
+      "types": ["street_address"]
+    }
+  ],
+  "status": "OK"
+}
